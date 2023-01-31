@@ -13,9 +13,13 @@ const linkStyles = {
 function Navbar({ setIsLoggedIn }) {
   const history = useHistory();
 
-  function handleLogout() {
-    setIsLoggedIn(false);
-    history.push("/login");
+  // function handleLogout() {
+  //   setIsLoggedIn(false);
+  //   history.push("/login");
+  
+  function handleClick(){
+    onLogout();
+    history.push("/login")
   }
 
   return (
